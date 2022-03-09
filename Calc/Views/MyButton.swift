@@ -10,10 +10,11 @@ import SwiftUI
 struct MyButton: View {
     
     var buttonModel: ButtonModel
-    
+    @Binding var input: String
     var body: some View {
         Button {
             print("\(buttonModel.id) was pressed")
+            input += buttonModel.id
         } label: {
             Text(buttonModel.id)
                 .font(.largeTitle)
@@ -34,6 +35,6 @@ struct MyButton_Previews: PreviewProvider {
     static let model = ButtonModel(id: "2", color: .orange)
     
     static var previews: some View {
-        MyButton(buttonModel: model)
+        MyButton(buttonModel: model, input: .constant("HELLP"))
     }
 }

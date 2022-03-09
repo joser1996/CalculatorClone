@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ButtonRow: View {
     let rowModel: RowModel
+    @Binding var input: String
     
     var body: some View {
         HStack(spacing: 1) {
             ForEach(rowModel.buttons, id: \.self) { button in
-                MyButton(buttonModel: button)
+                MyButton(buttonModel: button, input: $input)
             }
         }
     }
@@ -27,6 +28,6 @@ struct ButtonRow_Previews: PreviewProvider {
         ButtonModel(id: "4", color: .gray)
     ])
     static var previews: some View {
-        ButtonRow(rowModel: model)
+        ButtonRow(rowModel: model, input: .constant("YEST"))
     }
 }

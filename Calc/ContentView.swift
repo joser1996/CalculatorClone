@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var input: String = "0"
+    
     var body: some View {
-        Buttons(rows: buttonRows)
+        VStack(alignment: .trailing) {
+            Display(text: $input)
+            Buttons(rows: buttonRows, input: $input)
+        }
     }
     
 }
