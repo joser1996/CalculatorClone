@@ -12,15 +12,20 @@ struct ButtonRow: View {
     
     var body: some View {
         HStack(spacing: 1) {
-            ForEach(rowModel.symbols, id: \.self) { symbol in
-                MyButton(title: symbol)
+            ForEach(rowModel.buttons, id: \.self) { button in
+                MyButton(buttonModel: button)
             }
         }
     }
 }
 
 struct ButtonRow_Previews: PreviewProvider {
-    static let model = RowModel(["1", "@", "3", "4"])
+    static let model = RowModel([
+        ButtonModel(id: "1", color: .orange),
+        ButtonModel(id: "2", color: .orange),
+        ButtonModel(id: "3", color: .orange),
+        ButtonModel(id: "4", color: .gray)
+    ])
     static var previews: some View {
         ButtonRow(rowModel: model)
     }

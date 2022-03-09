@@ -8,10 +8,10 @@
 import Foundation
 
 let buttonRows: [RowModel] = [
-    RowModel(["AC", "+/-", "%", "/"]),
-    RowModel(["7", "8", "9", "X"]),
-    RowModel(["4", "5", "6", "-"]),
-    RowModel(["1", "2", "3", "+"]),
-    RowModel(["0", ".", "."])
+    RowModel([ButtonModel(id: "AC", color: .gray), ButtonModel(id: "+/-", color: .gray), ButtonModel(id: "%", color: .gray), ButtonModel(id: "/", color: .gray)]),
+    RowModel([ButtonModel(id: "7", color: .orange), ButtonModel(id: "8", color: .orange), ButtonModel(id: "9", color: .orange), ButtonModel(id: "X", color: .gray)]),
+    RowModel([ButtonModel(id: "4", color: .orange), ButtonModel(id: "5", color: .orange), ButtonModel(id: "6", color: .orange), ButtonModel(id: "-", color: .gray)]),
+    RowModel([ButtonModel(id: "1", color: .orange), ButtonModel(id: "2", color: .orange), ButtonModel(id: "3", color: .orange), ButtonModel(id: "+", color: .gray)]),
+    RowModel([ButtonModel(id: "0", color: .orange), ButtonModel(id: ".", color: .gray), ButtonModel(id: "=", color: .gray)]),
 ]
 

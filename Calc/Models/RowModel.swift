@@ -9,9 +9,9 @@ import Foundation
 
 struct RowModel: Identifiable {
     let id =  UUID()
-    let symbols: [String]
+    let buttons: [ButtonModel]
     
-    init(_ symbols: [String]) {
-        self.symbols = symbols
+    init(_ symbols: [ButtonModel]) {
+        self.buttons = symbols
     }
 }

@@ -9,31 +9,31 @@ import SwiftUI
 
 struct MyButton: View {
     
-    var title: String
+    var buttonModel: ButtonModel
     
     var body: some View {
         Button {
-            print("Button Pressed")
+            print("\(buttonModel.id) was pressed")
         } label: {
-            Text(title)
+            Text(buttonModel.id)
                 .font(.largeTitle)
                 .fontWeight(.medium)
-                .frame(width: 50, height: 50)
+                .frame(minWidth: 50, minHeight: 50)
                 .foregroundColor(.white)
-                .background(.orange)
+                .background(buttonModel.color)
 
         }
         .buttonStyle(PlainButtonStyle())
-        .frame(width: 50, height: 50)
+        .frame(minWidth: 50, minHeight: 50)
         
     }
 }
 
 struct MyButton_Previews: PreviewProvider {
     
-    static let one: String = "1"
+    static let model = ButtonModel(id: "2", color: .orange)
     
     static var previews: some View {
-        MyButton(title: one)
+        MyButton(buttonModel: model)
     }
 }
