@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF1A5E5F27D83C5D007DAB73 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A5E5E27D83C5D007DAB73 /* MyButton.swift */; };
+		FF1A5E6127D846B8007DAB73 /* ButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A5E6027D846B8007DAB73 /* ButtonRow.swift */; };
+		FF1A5E6327D847EE007DAB73 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A5E6227D847EE007DAB73 /* Buttons.swift */; };
+		FF1A5E6827D84A77007DAB73 /* RowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A5E6727D84A77007DAB73 /* RowModel.swift */; };
+		FF1A5E6A27D84C2A007DAB73 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A5E6927D84C2A007DAB73 /* ModelData.swift */; };
 		FFBAA58D27D7005300C00CD1 /* CalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA58C27D7005300C00CD1 /* CalcApp.swift */; };
 		FFBAA58F27D7005300C00CD1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBAA58E27D7005300C00CD1 /* ContentView.swift */; };
 		FFBAA59127D7005500C00CD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFBAA59027D7005500C00CD1 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF1A5E5E27D83C5D007DAB73 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
+		FF1A5E6027D846B8007DAB73 /* ButtonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRow.swift; sourceTree = "<group>"; };
+		FF1A5E6227D847EE007DAB73 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		FF1A5E6727D84A77007DAB73 /* RowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowModel.swift; sourceTree = "<group>"; };
+		FF1A5E6927D84C2A007DAB73 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		FFBAA58927D7005300C00CD1 /* Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFBAA58C27D7005300C00CD1 /* CalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcApp.swift; sourceTree = "<group>"; };
 		FFBAA58E27D7005300C00CD1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF1A5E5D27D83C3D007DAB73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A5E5E27D83C5D007DAB73 /* MyButton.swift */,
+				FF1A5E6027D846B8007DAB73 /* ButtonRow.swift */,
+				FF1A5E6227D847EE007DAB73 /* Buttons.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF1A5E6427D84A3C007DAB73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF1A5E6727D84A77007DAB73 /* RowModel.swift */,
+				FF1A5E6927D84C2A007DAB73 /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		FFBAA58027D7005300C00CD1 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +81,8 @@
 		FFBAA58B27D7005300C00CD1 /* Calc */ = {
 			isa = PBXGroup;
 			children = (
+				FF1A5E6427D84A3C007DAB73 /* Models */,
+				FF1A5E5D27D83C3D007DAB73 /* Views */,
 				FFBAA58C27D7005300C00CD1 /* CalcApp.swift */,
 				FFBAA58E27D7005300C00CD1 /* ContentView.swift */,
 				FFBAA59027D7005500C00CD1 /* Assets.xcassets */,
@@ -139,8 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1A5E6327D847EE007DAB73 /* Buttons.swift in Sources */,
 				FFBAA58F27D7005300C00CD1 /* ContentView.swift in Sources */,
+				FF1A5E6827D84A77007DAB73 /* RowModel.swift in Sources */,
 				FFBAA58D27D7005300C00CD1 /* CalcApp.swift in Sources */,
+				FF1A5E6127D846B8007DAB73 /* ButtonRow.swift in Sources */,
+				FF1A5E5F27D83C5D007DAB73 /* MyButton.swift in Sources */,
+				FF1A5E6A27D84C2A007DAB73 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
